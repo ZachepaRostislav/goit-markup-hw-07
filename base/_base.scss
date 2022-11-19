@@ -47,8 +47,21 @@ body {
   margin: 0 auto;
 }
 
-img {
+%title {
+  margin-bottom: 50px;
+  font-family: inherit;
+  font-weight: $font-weight-bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:  map-get($colors,'black-color') ;
+}
+
+%img {
   display: block;
+  height: 294px;
+  background-color: map-get($colors,'image-bg-color');
 }
 
 .section {
