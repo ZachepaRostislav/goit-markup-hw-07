@@ -456,5 +456,62 @@
         </form>
       </div>
     </footer>
+
+    <div class="modal__backdrop is-hidden" data-modal>
+      <div class="modal__block">
+        <button type="button" class="modal__button" data-modal-close>
+          <svg class="modal__closeIcon">
+            <use href="./images/sprite.svg#btn-close"></use>
+          </svg>
+        </button>
+        <form class="modal__form">
+          <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <label class="modal__label">
+            <span class="modal__text">Ім'я</span>
+            <input type="text" name="name" class="modal__input" />
+            <svg class="modal__icon">
+              <use href="./images/sprite.svg#person"></use>
+            </svg>
+          </label>
+
+          <label class="modal__label">
+            <span class="modal__text">Телефон</span>
+            <input type="tel" name="number" class="modal__input" />
+            <svg class="modal__icon">
+              <use href="./images/sprite.svg#phone-form"></use>
+            </svg>
+          </label>
+
+          <label class="modal__label">
+            <span class="modal__text">Пошта</span>
+            <input type="email" name="email" class="modal__input" />
+            <svg class="modal__icon">
+              <use href="./images/sprite.svg#email"></use>
+            </svg>
+          </label>
+          <label class="modal__label">
+            <span class="modal__text">Коментар</span>
+            <textarea
+              class="modal__textarea"
+              name="comment"
+              rows="10"
+              placeholder="Введіть текст"
+            >
+            </textarea>
+          </label>
+          <label class="modal__label">
+            <input type="checkbox" name="agreement" class="modal__checkbox" />
+            <span class="modal__agreementIcon"></span>
+            <span class="modal__agreementText"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#" class="modal__agreementLink">Умови договору</a></span
+            >
+          </label>
+          <button type="submit" class="modal__btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -37,6 +37,11 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms $time-function;
+
+    &:hover,
+    &:focus {
+      color: map-get($colors, 'accent-color');
+    }
 }
 .footer-section__location {
   color: map-get($colors,'white-text-color');
