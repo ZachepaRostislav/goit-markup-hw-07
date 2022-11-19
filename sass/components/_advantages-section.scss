@@ -19,12 +19,10 @@ flex-basis: calc((100% - 90px) / 4);
 }
 
 .advantages-section__wrapper {
+  @include centeredFlex();
   width: 100%;
   height: 120px;
-  background-color: map-get($colors, 'bg-color-advantages-icon' );
-  display: flex;
-  justify-content: center;
-  align-items:center;
+  background-color: map-get($colors, 'bg-color-advantages-icon' );  
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -35,13 +33,13 @@ flex-basis: calc((100% - 90px) / 4);
 }
 
 .advantages-section_caption{
-  margin-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: $font-weight-bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: map-get($colors, 'black-color' );
+    color: map-get($colors,'black-color');
 }
 
 .advantages-section_text {

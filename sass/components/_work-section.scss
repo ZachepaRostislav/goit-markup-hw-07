@@ -19,19 +19,18 @@
 }
 
 .work-section__img {
+  height: 294px;
   @extend %img;
 }
 
 .work-section__overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    padding: 27px 0;
-    background-color: rgba(47, 48, 58, 0.8);
+  @include centeredFlex();
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  padding: 27px 0;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .work-section__text {
