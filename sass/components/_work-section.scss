@@ -1,3 +1,7 @@
+.work-section {
+  @extend %section;
+}
+
 .work-section__title {
   @extend %title;
 }

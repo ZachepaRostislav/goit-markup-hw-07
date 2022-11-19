@@ -1,6 +1,7 @@
 .team-section {
   background-color: #f5f4fa;
   text-align: center;
+  @extend %section;
 }
 
 .team-section__title {
@@ -72,6 +73,9 @@
     fill: map-get($colors,'bg-color-social-icon');
     transition: fill 250ms $time-function;
     .team-section__social:hover & {
+        fill: map-get($colors, 'white-text-color');
+      }
+    .team-section__social:focus & {
       fill: map-get($colors, 'white-text-color');
     }
 }
